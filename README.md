@@ -5,6 +5,12 @@
 sudo apt-get install jstest
 ```
 
+Use jstest to find the joystick device file in /dev/input. Can be done by
+```
+jstest /dev/input/jsX
+```
+where X is the number of input joysticks. Find the appropriate one, and make changes in reader.c accordingly
+
 **To setup the LKM:**
 In the directory of the files, provide superuser privileges.
 ```
