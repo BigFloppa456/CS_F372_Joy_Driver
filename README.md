@@ -166,6 +166,6 @@ ____________________________________________________
 1. Divith Mahajan - 2020B3A31513G - Basic LKM structure Code, caller.c file, Documentation regarding the LKM init, exit, open, close methods, File operations idea to transfer data from reader to caller to LKM (40%).
 2. Akshat Saboo - 2020B3A80709G  - Attempted integration with X11 for mouse control and documentation regarding setup, initalize, running and unloading (10%).
 3. Divyam Srivastava - 2020B2A82103G - Documentation of Structs and _IOR macro used throughout the project, Reader file to read controller input (15%).
-4. Bhamare Yash Prashant - 2020B2A80760G - Reader file to read controller input 5%)
+4. Bhamare Yash Prashant - 2020B2A80760G - Reader file to read controller input (5%)
 5. Harshith Harithsa R - 2020B2A42007G - Implementation of Left Mouse Button (LMB) mapped to LB button of controller in LKM (30%)
 
