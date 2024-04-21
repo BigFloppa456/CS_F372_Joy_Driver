@@ -48,7 +48,7 @@ int main() {
         long ret = ioctl(dev, READVALUE, &joy);
         
         if (ret < 0){
-        // printf("ioctl failed. Return code: %ld, meaning: %s\n", ret, strerror(errno));
+         printf("ioctl failed. Return code: %ld, meaning: %s\n", ret, strerror(errno));
         }
             
             
