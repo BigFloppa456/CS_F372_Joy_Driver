@@ -85,6 +85,17 @@ Event types are defined as follows:
 #define JS_EVENT_INIT 0x80 // initial state of device
 ```
 
+struct mousek_device uses a USB Request block to get USB data and takes controller input to push out input data and the variables x and y are used to keep track of the position of the controller input device 
+code block
+```
+struct mousek_device {
+    signed char data[4];     /* use a 4-byte protocol */
+    struct urb urb;          /* USB Request block, to get USB data*/
+    struct input_dev *idev;   / pointer for input device, to push out input  data */
+    int x, y;                /* keep track of the position of this device */
+};
+```
+
 #### joy_driver.h 
 Contains definitions for a _IOR macro and a struct joyinp used to transfer data from caller.c to the LKM defined in joy_driver.c
 ```
@@ -150,4 +161,11 @@ Group Tetris. (n.d.). How to use the linux/joystick.h library. How To Use The li
 
 ### Linux Kernel Archives - Ragnar Hojland Espinosa
 Espinosa, R. H. (1998, August 7). Joystick API Documentation . The Linux Kernel Archives. https://www.kernel.org/doc/Documentation/input/joystick-api.txt
+____________________________________________________
+## Contribution
+1. Divith Mahajan - 2020B3A31513G - Basic LKM structure Code, caller.c file, Documentation regarding the LKM init, exit, open, close methods, File operations idea to transfer data from reader to caller to LKM (40%).
+2. Akshat Saboo - 2020B3A80709G  - Attempted integration with X11 for mouse control and documentation regarding setup, initalize, running and unloading (10%).
+3. Divyam Srivastava - 2020B2A82103G - Documentation of Structs and _IOR macro used throughout the project (10%).
+4. Bhamare Yash Prashant - 2020B2A80760G - Reader file to read controller input (10%)
+5. Harshith Harithsa R - 2020B2A42007G - Implementation of Left Mouse Button (LMB) mapped to LB button of controller in LKM (30%)
 
