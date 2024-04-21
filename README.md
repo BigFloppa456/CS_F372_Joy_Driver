@@ -133,3 +133,21 @@ Exit function for the LKM. When unloaded from the kernel using ```rmmod``` will 
 ```
  [ 1722.550794] exit module
 ```
+______________________________________
+# REFERENCES
+### Johannes 4GNU_Linux
+References taken from the following directories on the author's github:
+1. 01_simple_LKM
+2. 02_dev_nr
+3. 13_ioctl
+
+https://github.com/Johannes4Linux/Linux_Driver_Tutorial.git   
+
+Youtube Tutorials Referred: https://youtube.com/playlist?list=PLCGpd0Do5-I3b5TtyqeF1UdyD4C-S-dMa&si=v_P7eN6y7r_YzAzn   
+
+### Group Tetris - Simon Fraser University
+Group Tetris. (n.d.). How to use the linux/joystick.h library. How To Use The linux/joystick.h Library. https://opencoursehub.cs.sfu.ca/bfraser/grav-cms/cmpt433/links/files/2022-student-howtos/LinuxJoystick.hLibrary.pdf  
+
+### Linux Kernel Archives - Ragnar Hojland Espinosa
+Espinosa, R. H. (1998, August 7). Joystick API Documentation . The Linux Kernel Archives. https://www.kernel.org/doc/Documentation/input/joystick-api.txt
+
