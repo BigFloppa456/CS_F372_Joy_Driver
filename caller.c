@@ -24,6 +24,7 @@ int main() {
 
     struct joyinp joy = {0};
 	while(true){
+        printf("Loop enter\n");
         FILE *fp = fopen("joyInputs.txt", "r");
         if(fp == NULL){
             perror("Error opening files \n");
@@ -50,10 +51,10 @@ int main() {
         if (ret < 0){
          printf("ioctl failed. Return code: %ld, meaning: %s\n", ret, strerror(errno));
         }
-            
-            
+
         
         fclose(fp);
+        // break;
         }
     close(dev);
 	return 0;
